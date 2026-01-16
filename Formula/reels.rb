@@ -4,7 +4,7 @@ class Reels < Formula
   version "1.1.0"
   license "MIT"
 
-  depends_on "ffmpeg"
+  depends_on "ffmpeg-full"
 
   on_macos do
     depends_on arch: :arm64
@@ -19,9 +19,23 @@ class Reels < Formula
 
   def install
     if OS.mac?
-      bin.install "reels-darwin-arm64" => "reels"
+      bin.install "reels-darwin-arm64" => "reels-bin"
+      # Create wrapper script to set library paths
+      (bin/"reels").write <<~EOS
+        #!/bin/bash
+        FFMPEG_PREFIX="$(brew --prefix ffmpeg-full)"
+        export DYLD_LIBRARY_PATH="${FFMPEG_PREFIX}/lib:${DYLD_LIBRARY_PATH}"
+        exec "#{bin}/reels-bin" "$@"
+      EOS
     else
-      bin.install "reels-linux-amd64" => "reels"
+      bin.install "reels-linux-amd64" => "reels-bin"
+      # Create wrapper script to set library paths
+      (bin/"reels").write <<~EOS
+        #!/bin/bash
+        FFMPEG_PREFIX="$(brew --prefix ffmpeg-full)"
+        export LD_LIBRARY_PATH="${FFMPEG_PREFIX}/lib:${LD_LIBRARY_PATH}"
+        exec "#{bin}/reels-bin" "$@"
+      EOS
     end
   end
 
