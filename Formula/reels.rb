@@ -14,7 +14,7 @@ class Reels < Formula
 
   on_linux do
     url "https://github.com/njyeung/reels/releases/download/v1.1.0/reels-linux-amd64"
-    sha256 "872bf516a7202349a3d1420e33e988f0d24bacb474b356c7235d392d9bc61257"
+    sha256 "fac5323ffc599589def7366dceb1a74d82fbbaf527a4ca72aa5a2ad6a3768ce2"
   end
 
   def install
