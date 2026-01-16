@@ -1,20 +1,20 @@
 class Reels < Formula
   desc "TUI Instagram Reels viewer"
   homepage "https://github.com/njyeung/reels"
-  version "1.1.4"
+  version "1.1.0"
   license "MIT"
 
   depends_on "ffmpeg-full"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/njyeung/reels/releases/download/v1.1.4/reels-darwin-arm64"
-    sha256 "82bafbcaffeb148d81127fb8832ca6b2e200ef73f787d13ab36aa64322daaf91"
+    url "https://github.com/njyeung/reels/releases/download/v1.1.0/reels-darwin-arm64"
+    sha256 "01fa1b73d206ceaa16b96c2bf42cd3b9f22d5cf5221c4ab420260ca9c1baa921"
   end
 
   on_linux do
-    url "https://github.com/njyeung/reels/releases/download/v1.1.4/reels-linux-amd64"
-    sha256 "2aa29f9d3a07189afd0383074d3087d97bdbcafdc383b1905622a84ebe8eab2d"
+    url "https://github.com/njyeung/reels/releases/download/v1.1.0/reels-linux-amd64"
+    sha256 "4a72948d13637a5974b0a57e1cb73aba7aa723bc739054a74196efa7baff9e8d"
   end
 
   def install
