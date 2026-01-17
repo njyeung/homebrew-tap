@@ -9,12 +9,12 @@ class Reels < Formula
   on_macos do
     depends_on arch: :arm64
     url "https://github.com/njyeung/reels/releases/download/v1.1.0/reels-darwin-arm64"
-    sha256 "bee31cba034e44248d41db27e44c81242e643a4efc6044eff617b8a6b8e36f28"
+    sha256 "9f3d2e2ec66f98a724c48ff13491c086a73803e738676a4b498df354394d8954"
   end
 
   on_linux do
     url "https://github.com/njyeung/reels/releases/download/v1.1.0/reels-linux-amd64"
-    sha256 "2bc83cc189fff8727697226dedfc3feb24a9fee43cc2b53e4054131df899db24"
+    sha256 "cabf1246585731bc71cd9a3d27d343513a7c16feccc49b599b12b0cb3fb29e58"
   end
 
   def install
