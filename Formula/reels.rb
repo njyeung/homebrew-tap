@@ -1,20 +1,20 @@
 class Reels < Formula
   desc "Instagram reels in the terminal"
   homepage "https://github.com/njyeung/reels"
-  version "1.1.5"
+  version "1.1.6"
   license "MIT"
 
   depends_on "ffmpeg-full"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/njyeung/reels/releases/download/v1.1.5/reels-darwin-arm64"
-    sha256 "590adba297d7a3dae7d710c3e4f9d958a17f5eff88b2d0dbad5ccdc9fe766afa"
+    url "https://github.com/njyeung/reels/releases/download/v1.1.6/reels-darwin-arm64"
+    sha256 "4c5ecb50c010c94f310ae1942e7815cfe91c75649489af5ddb3c6e2a5ea6488d"
   end
 
   on_linux do
-    url "https://github.com/njyeung/reels/releases/download/v1.1.5/reels-linux-amd64"
-    sha256 "d65619159d79d3a217ad15554f7136a00a4cda86f70e69fd0e2597d2cf280839"
+    url "https://github.com/njyeung/reels/releases/download/v1.1.6/reels-linux-amd64"
+    sha256 "2499c546672e28d15bd63693b2105c137e9aa44bd0ea4347202aed93d4239783"
   end
 
   def install
