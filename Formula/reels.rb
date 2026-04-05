@@ -1,23 +1,23 @@
 class Reels < Formula
   desc "Instagram reels in the terminal"
   homepage "https://github.com/njyeung/reels"
-  version "1.2.7"
+  version "1.2.8"
   license "MIT"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/njyeung/reels/releases/download/v1.2.7/reels-darwin-arm64"
-    sha256 "6f98da41475a9b6649a9ec70d97171f59b0b8963f934b07868c641355b3f9326"
+    url "https://github.com/njyeung/reels/releases/download/v1.2.8/reels-darwin-arm64"
+    sha256 "06738158806ed48807a3163ec676a6894338ddb69e2380ea6bfaf9a53081ae2a"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/njyeung/reels/releases/download/v1.2.7/reels-linux-amd64"
-      sha256 "13e0b6bcb8d9a19be14d6ee146b1d2d3e0c632bb18ee43975c0617957913c7e9"
+      url "https://github.com/njyeung/reels/releases/download/v1.2.8/reels-linux-amd64"
+      sha256 "9c5d755aaee359d14ffeafcef18e50a01ccbd5182cbb27104264349c00671153"
     end
     on_arm do
-      url "https://github.com/njyeung/reels/releases/download/v1.2.7/reels-linux-arm64"
-      sha256 "3e9cf773898b4502fa7126cc937b12e16518a06248168d15b6dfb44ab828f7c0"
+      url "https://github.com/njyeung/reels/releases/download/v1.2.8/reels-linux-arm64"
+      sha256 "d37df85660184bda8f91738c293ea861d9e3177051315713a014d26f43b96caf"
     end
   end
 
